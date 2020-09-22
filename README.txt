@@ -6,7 +6,7 @@ Team Name: UAgenda
 Team Member Names:
 1) Arthur Fétiveau - Student Number: 300139642
 2) Caroline Tippins - Student Number: 7691410
-3) 
+3) Ralph Ngassa - Student Numver: 300157618
 4) 
 5) 
 6) 
