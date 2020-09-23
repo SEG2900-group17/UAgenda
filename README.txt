@@ -8,8 +8,9 @@ Team Member Names:
 2) Caroline Tippins - Student Number: 7691410
 3) Ralph Ngassa - Student Number: 300157618
 4) Rabea Murad Daoud - Student Number: 300164191 
-5) 
-6) Tiana Ye - Student Number: 300189296
+5) Tiana Ye - Student Number: 300189296
+6) Harieshan Elamurugan - Student Number: 300196433 
+
 
 Description:
 
