@@ -9,7 +9,7 @@ Team Member Names:
 3) Ralph Ngassa - Student Number: 300157618
 4) Rabea Murad Daoud - Student Number: 300164191 
 5) 
-6) 
+6) Tiana Ye - Student Number: 300189296
 
 Description:
 
