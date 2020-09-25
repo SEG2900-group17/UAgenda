@@ -49,6 +49,10 @@ body {
         padding-top: initial;
         margin-left: auto!important;
     }
+
+    .nav-link {
+        margin-left: 1rem;
+    }
 }
 
 /* Changes look of logo or brand */
@@ -64,7 +68,6 @@ body {
 .nav-link {
     float: right;
     font-size: 18px;
-    margin-left: 1rem;
     color: rgb(177 177 177);
     padding: 5px;
     border-bottom: .25rem solid transparent;
