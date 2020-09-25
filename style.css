@@ -1,0 +1,81 @@
+/* Body */
+
+body {
+    display: block;
+    margin: 0px;
+}
+
+/* Navbar class (Holds the whole navbar) */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #343a40;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-right: 15%;
+    padding-right: 15%;
+}
+
+/* Changes looks of the links in navbar */
+.navbar a {
+    text-decoration: none;
+    font-family: "Roboto", "Segoe UI", sans-serif;
+}
+
+/* Change view for mobile phones and PCs */
+@media only screen and (max-width: 667px) {
+    .navbar {
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+    }
+
+    /* Moves links to center */
+    .links {
+        padding-top: 5px;
+        margin-left: initial;
+    }
+}
+
+@media only screen and (min-width: 668px) {
+    .navbar {
+        padding-left: 15%;
+        padding-right: 15%;
+        justify-content: initial;
+    }
+
+    /* Moves links to the right */
+    .links {
+        padding-top: initial;
+        margin-left: auto!important;
+    }
+}
+
+/* Changes look of logo or brand */
+.nav-logo {
+    float: left;
+    font-size: 22px;
+    margin-left: 1rem;
+    color: #fff;
+    padding-top: 2.5px;
+}
+
+/* Changes looks of links */
+.nav-link {
+    float: right;
+    font-size: 18px;
+    margin-left: 1rem;
+    color: rgb(177 177 177);
+    padding: 5px;
+    border-bottom: .25rem solid transparent;
+}
+
+/* Makes the white border when hovering over the links */
+.nav-link:hover {
+    border-bottom: .25rem solid #fff;
+    color: #fff;
+}
+
+.section {
+
+}
