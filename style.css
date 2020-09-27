@@ -1,9 +1,12 @@
 /* Body */
-
 body {
-    display: block;
-    margin: 0px;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+/* Navbar */
 
 /* Navbar class (Holds the all navbar elements) */
 .navbar {
@@ -17,46 +20,6 @@ body {
 .navbar a {
     text-decoration: none;
     font-family: "Roboto", "Segoe UI", sans-serif;
-}
-
-/* Change view for mobile phones and PCs */
-
-@media screen and (max-width: 667px) {
-
-    /* Removes big padding when on mobile */
-    .navbar {
-        padding-left: 15px;
-        padding-right: 15px;
-        justify-content: center;
-    }
-
-    /* Moves links to center */
-    .links {
-        padding-left: 5px;
-        padding-top: 5px;
-        margin-left: initial;
-    }
-}
-
-@media screen and (min-width: 668px) {
-
-    /* Adds big padding when on pc */
-    .navbar {
-        padding-left: 15%;
-        padding-right: 15%;
-        justify-content: initial;
-    }
-
-    /* Moves links to the right */
-    .links {
-        padding-top: initial;
-        margin-left: auto!important;
-    }
-
-    /* Adds space between the links */
-    .nav-link {
-        margin-left: 1rem;
-    }
 }
 
 /* Changes look of logo or brand */
@@ -83,8 +46,84 @@ body {
     color: #fff;
 }
 
+/* Responsive */
+
+/* Change view for mobile phones and PCs */
+
+@media screen and (max-width: 667px) {
+
+    /* Removes big padding when on mobile */
+    .navbar {
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+    }
+
+    /* Moves links to center */
+    .links {
+        padding-top: 5px;
+        margin-left: initial;
+    }
+}
+
+@media screen and (min-width: 668px) {
+
+    /* Adds big padding when on pc */
+    .navbar {
+        padding-left: 15%;
+        padding-right: 15%;
+        justify-content: initial;
+    }
+
+    /* Moves links to the right */
+    .links {
+        padding-top: initial;
+        margin-left: auto!important;
+    }
+
+    /* Adds space between the links */
+    .nav-link {
+        margin-left: 1rem;
+    }
+}
+
+/* Home Page */
+
+/* Setting up the background-image in the div and contains the text */
+.home {
+    /* Setup image and position */
+    background-image: url("img/calendar-3.jpg");
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+
+    /* Setting up a way so the page is always the size of the screen or more (no white space on the bottom) */
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Text div (Sets up color, size and more) */
+.home-text {
+    color: #fff;
+    font-size: 2.3rem;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Helper Classes */
+
+/* Class to set the margin to 0 */
+.m-0 {
+    margin: 0;
+}
+
 /* Class to align text to center */
 .text-center {
     text-align: center;
 }
-
