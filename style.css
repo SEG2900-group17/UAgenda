@@ -5,15 +5,12 @@ body {
     margin: 0px;
 }
 
-/* Navbar class (Holds the whole navbar) */
+/* Navbar class (Holds the all navbar elements) */
 .navbar {
     display: flex;
     flex-wrap: wrap;
     background-color: #343a40;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    padding-right: 15%;
-    padding-right: 15%;
+    padding: 15px 15% 10px;
 }
 
 /* Changes looks of the links in navbar */
@@ -23,7 +20,10 @@ body {
 }
 
 /* Change view for mobile phones and PCs */
+
 @media screen and (max-width: 667px) {
+
+    /* Removes big padding when on mobile */
     .navbar {
         padding-left: 15px;
         padding-right: 15px;
@@ -32,12 +32,15 @@ body {
 
     /* Moves links to center */
     .links {
+        padding-left: 5px;
         padding-top: 5px;
         margin-left: initial;
     }
 }
 
 @media screen and (min-width: 668px) {
+
+    /* Adds big padding when on pc */
     .navbar {
         padding-left: 15%;
         padding-right: 15%;
@@ -50,6 +53,7 @@ body {
         margin-left: auto!important;
     }
 
+    /* Adds space between the links */
     .nav-link {
         margin-left: 1rem;
     }
@@ -59,16 +63,16 @@ body {
 .nav-logo {
     float: left;
     font-size: 22px;
-    margin-left: 1rem;
     color: #fff;
-    padding-top: 2.5px;
+    margin-left: 1rem;
+    padding-top: 3px;
 }
 
 /* Changes looks of links */
 .nav-link {
     float: right;
-    font-size: 18px;
     color: rgb(177 177 177);
+    font-size: 17px;
     padding: 5px;
     border-bottom: .25rem solid transparent;
 }
@@ -79,6 +83,8 @@ body {
     color: #fff;
 }
 
-.section {
-
+/* Class to align text to center */
+.text-center {
+    text-align: center;
 }
+
