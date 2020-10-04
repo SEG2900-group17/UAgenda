@@ -10,6 +10,11 @@ body {
 
 /* Navbar class (Holds the all navbar elements) */
 .navbar {
+    /* Makes sure that the navbar is always on the top of screen*/
+    position: sticky;
+    top: 0;
+
+    /* Makes sure the position of the text is good */
     display: flex;
     flex-wrap: wrap;
     background-color: #8F001A;
@@ -46,9 +51,7 @@ body {
     color: #fff;
 }
 
-/* Responsive */
-
-/* Change view for mobile phones and PCs */
+/* Responsive (Working on mobile and PCs) */
 
 @media screen and (max-width: 667px) {
 
@@ -133,6 +136,7 @@ body {
     text-align: center;
 }
 
+/* Decides on the size of the logo */
 .main-logo {
     width: 168px;
 }
