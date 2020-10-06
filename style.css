@@ -38,7 +38,7 @@ body {
 
 /* Changes looks of links */
 .nav-link {
-    float: right;
+    float: left;
     color: rgb(232 232 232);
     font-size: 17px;
     padding: 5px;
