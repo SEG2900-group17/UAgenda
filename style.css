@@ -85,6 +85,12 @@ section h2 {
     .rows > .row {
         flex: 1 1 100%;
     }
+
+    /* Removed the padding on each side of the page */
+    .contact {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 }
 
 @media screen and (min-width: 668px) {
@@ -111,6 +117,12 @@ section h2 {
     .rows > .row {
         flex: 1 1 30%;
     }
+
+    /* Adding padding on each side of the page */
+    .contact {
+        padding-right: 8%;
+        padding-left: 8%;
+    }
 }
 
 /* Home Page */
@@ -135,8 +147,6 @@ section h2 {
 /* Setting up the background-image in the div and contains the text */
 .contact {
     background-color: #8F001A; /* Garnett */
-    padding-right: 8%;
-    padding-left: 8%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
