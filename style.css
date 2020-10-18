@@ -80,6 +80,11 @@ section h2 {
         padding-top: 5px;
         margin-left: initial;
     }
+
+    /* Changes the page from 3 rows to 1 when on mobile */
+    .rows > .row {
+        flex: 1 1 100%;
+    }
 }
 
 @media screen and (min-width: 668px) {
@@ -100,6 +105,11 @@ section h2 {
     /* Adds space between the links */
     .nav-link {
         margin-left: 1rem;
+    }
+
+    /* Changes the page from 1 rows to 3 when on PC */
+    .rows > .row {
+        flex: 1 1 30%;
     }
 }
 
@@ -125,13 +135,28 @@ section h2 {
 /* Setting up the background-image in the div and contains the text */
 .contact {
     background-color: #8F001A; /* Garnett */
-    width: 100%;
-    height: 100vh;
+    padding-right: 8%;
+    padding-left: 8%;
+    min-height: 100vh;
     display: flex;
-    flex: 1;
     flex-direction: column;
     justify-content: center;
 }
+
+/* Setting the rows */
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row {
+    text-align: center;
+}
+
+/* Class that makes the height the full page */
 
 .full-page {
     height: 100vh;
