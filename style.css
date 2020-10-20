@@ -82,7 +82,12 @@ section h2 {
     }
 
     /* Changes the page from 3 rows to 1 when on mobile */
-    .rows > .row {
+    .rows > .row-3 {
+        flex: 1 1 100%;
+    }
+
+    /* Changes the page from 7 rows to 1 when on mobile */
+    .rows > .row-7 {
         flex: 1 1 100%;
     }
 
@@ -114,8 +119,13 @@ section h2 {
     }
 
     /* Changes the page from 1 rows to 3 when on PC */
-    .rows > .row {
+    .rows > .row-3 {
         flex: 1 1 30%;
+    }
+
+    /* Changes the page from 1 rows to 7 when on PC */
+    .rows > .row-7 {
+        flex: 1 1 14%;
     }
 
     /* Adding padding on each side of the page */
@@ -162,7 +172,11 @@ section h2 {
     justify-content: center;
 }
 
-.row {
+.row-3 {
+    text-align: center;
+}
+
+.row-7 {
     text-align: center;
 }
 
@@ -181,6 +195,14 @@ section h2 {
     font-weight: 700;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+/* Team Text */
+.team-text {
+    font-size: 2rem;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 /* Helper Classes */
