@@ -397,7 +397,7 @@ section h2 {
 /* Class that makes the height the full page */
 
 .full-page {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* Style footer */
