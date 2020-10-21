@@ -1,5 +1,6 @@
 /* Remove margin everywhere */
 *{
+    box-sizing: border-box;
     margin: 0;
 }
 
@@ -219,6 +220,38 @@ section h2 {
 /* Change size of secondary text */
 .secondary-text {
     font-size: 1.2em;
+}
+/*Features Page*/
+.features{
+    background-color: #f4f4f4;
+    color: #3B3A3B;
+    font-family: 'Montserrat', sans-serif;
+}
+.features h1{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    padding: 20px;
+}
+.features h3{
+    max-width: 1000px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.row{
+    width: 90%;
+    padding-top: 50px;
+    margin-left: 5%
+}
+.col{
+    width: 25%;
+    display: inline-block;
+    float: left;
+    margin-right: 10px 10px;
 }
 
 /* Pricing Page */
