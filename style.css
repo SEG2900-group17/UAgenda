@@ -1,3 +1,8 @@
+/* Remove margin everywhere */
+*{
+    margin: 0;
+}
+
 /* Body */
 body {
     margin: 0;
@@ -5,6 +10,8 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+/* Changing font-size for h1 and h2 */
 
 section h1 {
     font-size: 2rem;
@@ -81,20 +88,25 @@ section h2 {
         margin-left: initial;
     }
 
+    /* Removed the padding on each side of the page */
+    .contact {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
     /* Changes the page from 3 rows to 1 when on mobile */
     .rows > .row-3 {
+        flex: 1 1 100%;
+    }
+
+    /* Changes the page from 3 rows to 1 when on mobile */
+    .rows > .row-3-pricing {
         flex: 1 1 100%;
     }
 
     /* Changes the page from 7 rows to 1 when on mobile */
     .rows > .row-7 {
         flex: 1 1 100%;
-    }
-
-    /* Removed the padding on each side of the page */
-    .contact {
-        padding-right: 20px;
-        padding-left: 20px;
     }
 }
 
@@ -118,20 +130,24 @@ section h2 {
         margin-left: 1rem;
     }
 
+    /* Adding padding on each side of the page */
+    .contact {
+        padding-right: 8%;
+        padding-left: 8%;
+    }
+
     /* Changes the page from 1 rows to 3 when on PC */
     .rows > .row-3 {
         flex: 1 1 30%;
     }
 
+    .rows > .row-3-pricing {
+        flex: 0 1 25%;
+    }
+
     /* Changes the page from 1 rows to 7 when on PC */
     .rows > .row-7 {
         flex: 1 1 14%;
-    }
-
-    /* Adding padding on each side of the page */
-    .contact {
-        padding-right: 8%;
-        padding-left: 8%;
     }
 }
 
@@ -154,38 +170,6 @@ section h2 {
     justify-content: center;
 }
 
-/* Setting up the background-image in the div and contains the text */
-.contact {
-    background-color: #8F001A; /* Garnett */
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* Setting the rows */
-.rows {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.row-3 {
-    text-align: center;
-}
-
-.row-7 {
-    text-align: center;
-}
-
-/* Class that makes the height the full page */
-
-.full-page {
-    height: 100vh;
-}
-
 /* Text div (Sets up color, size and more) */
 .home-text {
     color: #fff;
@@ -197,11 +181,96 @@ section h2 {
     padding-right: 5px;
 }
 
+/* Decides on the size of the logo */
+.main-logo {
+    width: 168px;
+}
+
+/* Home Launch Web Version button */
+.web-version-button {
+    color: #fff;
+    background-color: #8F001A;
+    padding: 10px 24px;
+    border-width: 0px;
+    height: 50px;
+    border-radius: 8px!important;
+    font-size: 16px;
+    border-color: #a6a6a6;
+}
+
+/* Fix button placement */
+.button-container {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+/* App badge */
+.app-badge {
+    height: 50px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+/* Change size of main text */
 .main-text {
     font-size: 1.5em;
 }
+
+/* Change size of secondary text */
 .secondary-text {
     font-size: 1.2em;
+}
+
+/* Pricing Page */
+
+/* Setting up the background-image in the div and contains the text */
+.pricing {
+    background-color: #f8eacd;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pricing-main-text {
+    font-size: 3rem;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.pricing-secondary-text {
+    font-size: 2.2rem;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.pricing-cost-text {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.pricing-text {
+    font-size: 1rem;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-align: left;
+}
+
+.row-3-pricing {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Team Section*/
+
+.team {
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 /* Team Text */
@@ -224,6 +293,75 @@ section h2 {
     font-size: 1.2rem;
 }
 
+/* Contact Section */
+
+/* Setting up the background-image in the div and contains the text */
+.contact {
+    background-color: #8F001A; /* Garnett */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 4.2rem;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.contact-h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.contact-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+/* Setting the rows */
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row-3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.row-7 {
+    text-align: center;
+}
+
+/* Class that makes the height the full page */
+
+.full-page {
+    height: 100vh;
+}
+
+/* Style footer */
+.footer {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 /* Helper Classes */
 
 /* Class to set the margin to 0 */
@@ -234,33 +372,4 @@ section h2 {
 /* Class to align text to center */
 .text-center {
     text-align: center;
-}
-
-/* Decides on the size of the logo */
-.main-logo {
-    width: 168px;
-}
-
-/* App badge */
-.app-badge {
-    height: 50px;
-    padding-left: 3px;
-    padding-right: 3px;
-}
-
-/* Home Launch Web Version button */
-.web-version-button {
-    color: #fff;
-    background-color: #8F001A;
-    padding: 10px 24px;
-    border-width: 0px;
-    height: 50px;
-    border-radius: 8px!important;
-    font-size: 16px;
-    border-color: #a6a6a6;
-}
-
-.button-container {
-    display: inline-flex;
-    vertical-align: middle;
 }
