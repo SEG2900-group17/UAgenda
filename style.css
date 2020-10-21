@@ -1,6 +1,6 @@
 /* Remove margin everywhere */
 *{
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     margin: 0;
 }
 
@@ -109,6 +109,15 @@ section h2 {
     .rows > .row-7 {
         flex: 1 1 100%;
     }
+
+    /* Changes the page from 4 rows to 1 when on mobile */
+    .col{
+        display: inline-block;
+        text-align: left;
+        width: 100%;
+        padding-bottom: 20px;
+        vertical-align: top;
+    }
 }
 
 @media screen and (min-width: 668px) {
@@ -150,6 +159,15 @@ section h2 {
     .rows > .row-7 {
         flex: 1 1 14%;
     }
+
+    /* Changes the page from 1 rows to 4 when on PC */
+    .col{
+        display: inline-block;
+        text-align: left;
+        width: 24%;
+        vertical-align: top;
+        padding-bottom: 20px;
+    }
 }
 
 /* Home Page */
@@ -187,18 +205,6 @@ section h2 {
     width: 168px;
 }
 
-/* Home Launch Web Version button */
-.web-version-button {
-    color: #fff;
-    background-color: #8F001A;
-    padding: 10px 24px;
-    border-width: 0px;
-    height: 50px;
-    border-radius: 8px!important;
-    font-size: 16px;
-    border-color: #a6a6a6;
-}
-
 /* Fix button placement */
 .button-container {
     display: inline-flex;
@@ -210,6 +216,18 @@ section h2 {
     height: 50px;
     padding-left: 3px;
     padding-right: 3px;
+}
+
+/* Home Launch Web Version button */
+.web-version-button {
+    color: #fff;
+    background-color: #8F001A;
+    padding: 10px 24px;
+    border-width: 0px;
+    height: 50px;
+    border-radius: 8px!important;
+    font-size: 16px;
+    border-color: #a6a6a6;
 }
 
 /* Change size of main text */
@@ -226,6 +244,8 @@ section h2 {
     background-color: #f4f4f4;
     color: #3B3A3B;
     font-family: 'Montserrat', sans-serif;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 .features h1{
     display: flex;
@@ -236,22 +256,17 @@ section h2 {
     padding: 20px;
 }
 .features h3{
-    max-width: 1000px;
+    /*max-width: 1000px;*/
     font-size: 15px;
     margin-top: 10px;
-    margin-left: 300px;
-    margin-right: 300px;
+    /*margin-left: 300px;*/
+    /*margin-right: 300px;*/
+    text-align: center;
 }
 .row{
     width: 90%;
     padding-top: 50px;
-    margin-left: 5%
-}
-.col{
-    width: 25%;
-    display: inline-block;
-    float: left;
-    margin-right: 10px 10px;
+    margin-left: 5%;
 }
 
 /* Pricing Page */
