@@ -1,0 +1,43 @@
+Overall Look and Feel of UAgenda
+===============================
+
+The overall look of the website should be modern. We will be using JavaScript animations (GSAP) to give a better look to the website and make it more interactive for the users.
+
+Colours
+========
+For UAgenda, colours are inspired from the University of Ottawa colors but include other colors too.
+
+The main color is burgundy which is used for some section and the navigation bar, it is also used in the team's avatars and the logo :
+- #8F001A
+
+Background colors for the sections :
+
+- Main section has an image instead of a color (img/calendar-4.jpg)
+- #f4f4f4 (Features)
+- #f8eacd (Pricing
+- #fff (Team)
+- #8F001A (Contact Us)
+
+Text color
+- #fff
+- #000
+
+Button
+- 8F001A
+- Icons from brands
+
+Iconography
+===========
+For icons we are using a logo that we designed representing an agenda (img/UAgenda.svg) to fit with the theme of our product as well as icons from social medias and brands (Google Play, App Store, Instagram, Facebook and Gmail)
+
+Typography
+==========
+We will be using Roboto, Poppins and Montserrat from Google Fonts with the size of 300, 500 and 700 depending on the use case (Titles, paragraphs, subtitles and more)
+
+Links
+=====
+The navigation bar will be underlined when hovering and them and keeping the last link underlined until the user clicks on another section.
+
+Buttons
+=======
+Buttons will be simple with the same burgundy color.
