@@ -244,8 +244,12 @@ section h2 {
     background-color: #f4f4f4;
     color: #3B3A3B;
     font-family: 'Montserrat', sans-serif;
-    padding-bottom: 30px;
-    padding-top: 30px;
+   /* padding-bottom: 30px;
+    padding-top: 30px;*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .features h1{
     display: flex;
@@ -317,8 +321,12 @@ section h2 {
 /* Team Section*/
 
 .team {
-    padding-bottom: 50px;
-    padding-top: 50px;
+    /*padding-bottom: 50px;
+    padding-top: 50px;*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Team Text */
